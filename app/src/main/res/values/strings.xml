@@ -4,6 +4,8 @@
     <string name="btn_retry">Retry</string>
     <string name="title_show_more">Show more</string>
 
+
+
     <!-- Coach -->
     <string name="title_coaches">Coaches</string>
     <string name="text_coach_age">%d years old</string>
@@ -40,14 +42,28 @@
     <string name="button_log_out_text">Log out</string>
 
     <!--Auth-->
-    <string name="text_no_account">Don\'t have an account?</string>
-    <string name="btn_create_account">Create an account</string>
     <string name="btn_login">Log in</string>
-    <string name="hint_password">Password</string>
+    <string name="btn_register">Registrieren</string>
+    <string name="hint_password">Passwort</string>
     <string name="hint_phone">Phone number</string>
     <string name="hint_name">Name</string>
     <string name="register_button_text">Done</string>
     <string name="phone_prefix">+380</string>
+    <string name="dein_verein">Dein Verein.</string>
+    <string name="deine_base">Deine Base.</string>
+    <string name="hallo">Hallo.</string>
+    <string name="login">Logge dich jetzt ein</string>
+    <string name="passwort_vergessen">Passwort vergessen?</string>
+    <string name="email">Email</string>
+    <string name="password_weg">Passwort weg?</string>
+    <string name="forgot_pass_description">Bitte nenne uns deine E-Mail. Wir schicken dir dann einen Link zum zurucksetzen</string>
+    <string name="senden">senden</string>
+    <string name="deine_e_mail">Deine E-Mail</string>
+    <string name="_6_stelliger_code">6-stelliger Code</string>
+    <string name="neues_passwort">Neues Passwort</string>
+    <string name="speichern">speichern</string>
+    <string name="registrieren">Registrieren</string>
+    <string name="first_name">Vorname</string>
 
     <!--Login Errors-->
     <string name="error_password_invalid">Password should contain 8 characters and at least 1 capital letter</string>
@@ -63,5 +79,14 @@
     <string name="settings_notifications">Notifications</string>
 
     <string name="title_empty">Nothing here!</string>
+    <string name="second_name">Nachname</string>
+    <string name="mobilnumber">Mobilnummer</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="passwort_wiederholen">Passwort wiederholen</string>
+    <string name="freundschaftscode_scannen">Freundschaftscode scannen</string>
+    <string name="invitation_description">Wenn du von einem Freund zu Fanbaze eingeladen wurdest, kannst du hier den Freundescode eingeben oder als QR-Code einscannen.</string>
+    <string name="code_eingeben">Code eingeben</string>
+    <string name="skip">Uberspringen</string>
+
 
 </resources>

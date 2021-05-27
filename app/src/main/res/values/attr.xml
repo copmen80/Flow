@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="backgroundShowMore" format="reference" />
+        <attr name="textColorShowMore" format="color" />
+        <attr name="textSizeShowMore" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingErrorView">
+        <attr name="iconEmpty" format="reference" />
+        <attr name="iconError" format="reference" />
+        <attr name="iconSize" format="dimension" />
+        <attr name="textAppearance" format="reference" />
+        <attr name="retryBtnStyle" format="reference" />
+    </declare-styleable>
+</resources>
