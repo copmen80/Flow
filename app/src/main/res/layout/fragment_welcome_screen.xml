@@ -2,51 +2,62 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layoutLogin"
+    <TextView
+        android:id="@+id/tv_first_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xlarge"
+        android:text="@string/dein_verein"
+        android:textSize="@dimen/settings_text_big_size"
+        app:layout_constraintBottom_toTopOf="@id/tv_second_string"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_second_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xlarge"
+        android:text="@string/deine_base"
+        android:textSize="@dimen/settings_text_big_size"
+        app:layout_constraintBottom_toTopOf="@id/btn_Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_Login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_medium"
-        app:hintEnabled="false"
+        android:layout_marginStart="@dimen/spacing_xlarge"
+        android:layout_marginEnd="@dimen/spacing_xlarge"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:background="@drawable/button_login_color"
+        android:gravity="center"
+        android:padding="@dimen/spacing_small"
+        android:text="@string/btn_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/settings_card_text_size"
+        app:layout_constraintBottom_toTopOf="@id/btn_Register"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:prefixText="@string/phone_prefix"
-        app:layout_constraintBottom_toTopOf="@id/layoutRegister"
-        app:prefixTextColor="@color/black">
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_phone"
-            android:inputType="phone"
-            android:maxLength="9"
-            android:textAppearance="@style/TextAppearance.App.Text" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layoutRegister"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_Register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_medium"
-        app:hintEnabled="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/spacing_xlarge"
+        android:layout_marginEnd="@dimen/spacing_xlarge"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:background="@drawable/gradient_register_btn"
+        android:gravity="center"
+        android:padding="@dimen/spacing_micro"
+        android:text="@string/btn_register"
+        android:textSize="@dimen/settings_card_text_size"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:passwordToggleEnabled="true">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_register"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_password"
-            android:inputType="textPassword"
-            android:textAppearance="@style/TextAppearance.App.Text" />
-
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
