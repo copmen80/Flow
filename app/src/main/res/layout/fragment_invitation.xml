@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/invitation_background" />
+
+    <TextView
+        android:id="@+id/tv_invitation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xlarge"
+        android:layout_marginTop="@dimen/spacing_xlarge"
+        android:layout_marginEnd="@dimen/spacing_xlarge"
+        android:text="@string/freundschaftscode_scannen"
+        android:textSize="@dimen/settings_text_mid_size"
+        app:layout_constraintBottom_toTopOf="@id/tv_invitation_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_invitation_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xlarge"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_xlarge"
+        android:layout_marginBottom="@dimen/material_emphasis_medium"
+        android:text="@string/invitation_description"
+        android:textSize="@dimen/settings_card_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_invitation_title" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tv_first_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xlarge"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_xlarge"
+        android:layout_marginBottom="@dimen/spacing_medium"
+
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_invitation_description"
+        app:prefixText="@string/phone_prefix"
+        app:prefixTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/code_eingeben"
+            android:inputType=""
+            android:textAppearance="@style/TextAppearance.App.Text"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:text="@string/skip"
+        android:textSize="@dimen/settings_card_text_size"
+        app:layout_constraintBottom_toTopOf="@id/btn_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xlarge"
+        android:layout_marginEnd="@dimen/spacing_xlarge"
+        android:layout_marginBottom="@dimen/spacing_xlarge"
+        android:background="@drawable/button_login_color"
+        android:gravity="center"
+        android:padding="@dimen/spacing_small"
+        android:text="Code verwenden"
+        android:textColor="@color/white"
+        android:textSize="@dimen/settings_card_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
