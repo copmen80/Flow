@@ -5,6 +5,18 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="yellow_primary">#FFF4E133</color>
+    <color name="yellow_secondary">#CCF4E133</color>
+    <color name="amber">#ffc107</color>
+    <color name="amber_orange">#ff6f00</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="grey">#FFA8A8A8</color>
+    <color name="red">#FFFF0000</color>
+    <color name="dark_grey">#FF2B2B2B</color>
+    <color name="toolbarActionAccent">#CC4B4B4B</color>
+    <color name="bottom_nav_icon_default_color">#A8A8A8</color>
+    <color name="bottom_nav_color">#FF171717</color>
+    <color name="overlay_color">#80000000</color>
+
 </resources>
