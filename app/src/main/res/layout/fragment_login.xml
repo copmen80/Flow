@@ -9,8 +9,8 @@
         android:id="@+id/tv_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_xlarge"
         android:layout_marginStart="@dimen/spacing_xlarge"
+        android:layout_marginTop="@dimen/spacing_xlarge"
         android:text="@string/hallo"
         android:textSize="@dimen/settings_text_big_size"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,9 +21,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_xlarge"
+        android:layout_marginTop="@dimen/spacing_medium"
         android:text="@string/login"
         android:textSize="@dimen/settings_card_text_size"
-        android:layout_marginTop="@dimen/spacing_medium"
         app:layout_constraintBottom_toTopOf="@id/layoutLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_hello" />
@@ -39,18 +39,16 @@
         app:layout_constraintBottom_toTopOf="@id/layoutRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_login_text"
-        app:prefixText="@string/phone_prefix"
-        app:prefixTextColor="@color/black">
+        app:layout_constraintTop_toBottomOf="@id/tv_login_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#80FFFFFF"
             android:hint="@string/email"
-            android:inputType=""
-            android:maxLength="9"
-            android:textAppearance="@style/TextAppearance.App.Text" />
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,10 +68,10 @@
             android:id="@+id/et_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#80FFFFFF"
             android:hint="@string/hint_password"
             android:inputType="textPassword"
-            android:textAppearance="@style/TextAppearance.App.Text"
-            />
+            android:textColorHint="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

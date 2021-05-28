@@ -87,6 +87,7 @@
     <string name="invitation_description">Wenn du von einem Freund zu Fanbaze eingeladen wurdest, kannst du hier den Freundescode eingeben oder als QR-Code einscannen.</string>
     <string name="code_eingeben">Code eingeben</string>
     <string name="skip">Uberspringen</string>
+    <string name="neues_passwort_wiederholen">Neues Passwort wiederholen</string>
 
 
 </resources>

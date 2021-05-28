@@ -19,6 +19,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
         android:layout_width="100dp"
@@ -26,8 +28,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="@dimen/spacing_xlarge"
         android:layout_marginBottom="@dimen/spacing_medium"
-        app:border_color="#FF000000"
-        app:border_width="2dp"
+        android:background="@null"
+        android:backgroundTint="#80FFFFFF"
         app:layout_constraintBottom_toTopOf="@id/tv_first_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -42,19 +44,18 @@
         app:hintEnabled="false"
         app:layout_constraintBottom_toTopOf="@id/tv_last_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:prefixText="@string/phone_prefix"
-        app:prefixTextColor="@color/white">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_first_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#80FFFFFF"
             android:hint="@string/first_name"
-            android:inputType=""
+            android:inputType="text"
             android:textAppearance="@style/TextAppearance.App.Text"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -68,18 +69,18 @@
         app:hintEnabled="false"
         app:layout_constraintBottom_toTopOf="@id/tv_phone_number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:prefixText="@string/phone_prefix"
-        app:prefixTextColor="@color/white">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_last_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#80FFFFFF"
             android:hint="@string/second_name"
-            android:inputType=""
+            android:inputType="text"
             android:textAppearance="@style/TextAppearance.App.Text"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -100,10 +101,12 @@
             android:id="@+id/et_phone_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#80FFFFFF"
             android:hint="@string/mobilnumber"
-            android:inputType=""
-            android:textAppearance="@style/TextAppearance.App.Text"
-            android:textColor="@color/white" />
+            android:inputType="phone"
+            android:maxLength="9"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -116,18 +119,17 @@
         app:hintEnabled="false"
         app:layout_constraintBottom_toTopOf="@id/tv_password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:prefixText="@string/phone_prefix"
-        app:prefixTextColor="@color/white">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#80FFFFFF"
             android:hint="@string/e_mail"
-            android:inputType=""
-            android:textAppearance="@style/TextAppearance.App.Text"
-            android:textColor="@color/white" />
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -140,18 +142,17 @@
         app:hintEnabled="false"
         app:layout_constraintBottom_toTopOf="@id/tv_repeat_password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:prefixText="@string/phone_prefix"
-        app:prefixTextColor="@color/white">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#80FFFFFF"
             android:hint="@string/hint_password"
-            android:inputType=""
-            android:textAppearance="@style/TextAppearance.App.Text"
-            android:textColor="@color/white" />
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -164,18 +165,17 @@
         app:hintEnabled="false"
         app:layout_constraintBottom_toTopOf="@id/btn_register"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:prefixText="@string/phone_prefix"
-        app:prefixTextColor="@color/white">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_repeat_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#80FFFFFF"
             android:hint="@string/passwort_wiederholen"
-            android:inputType=""
-            android:textAppearance="@style/TextAppearance.App.Text"
-            android:textColor="@color/white" />
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -185,7 +185,8 @@
         android:layout_marginStart="@dimen/spacing_xlarge"
         android:layout_marginEnd="@dimen/spacing_xlarge"
         android:layout_marginBottom="@dimen/spacing_xlarge"
-        android:background="@drawable/button_login_color"
+        android:background="@drawable/gradient_register_btn"
+        android:backgroundTint="@null"
         android:gravity="center"
         android:padding="@dimen/spacing_small"
         android:text="@string/senden"

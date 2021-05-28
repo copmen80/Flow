@@ -32,18 +32,18 @@
         app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_new_pass_title"
-        app:prefixText="@string/phone_prefix"
-        app:prefixTextColor="@color/white">
+        app:layout_constraintTop_toBottomOf="@id/tv_new_pass_title">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#80FFFFFF"
             android:hint="@string/_6_stelliger_code"
-            android:inputType=""
-            android:textAppearance="@style/TextAppearance.App.Text"
-            android:textColor="@color/white" />
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,18 +57,18 @@
         app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_code"
-        app:prefixText="@string/phone_prefix"
-        app:prefixTextColor="@color/white">
+        app:layout_constraintTop_toBottomOf="@id/tv_code">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_new_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#80FFFFFF"
             android:hint="@string/neues_passwort"
-            android:inputType=""
+            android:inputType="textPassword"
             android:textAppearance="@style/TextAppearance.App.Text"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -90,10 +90,12 @@
             android:id="@+id/et_repeat_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Neues Passwort wiederholen"
-            android:inputType=""
+            android:backgroundTint="#80FFFFFF"
+            android:hint="@string/neues_passwort_wiederholen"
+            android:inputType="textPassword"
             android:textAppearance="@style/TextAppearance.App.Text"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
